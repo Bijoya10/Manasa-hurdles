@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing Board</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="player.js"></script>
+   
+    <script src="form.js"></script>
+    <script src="game.js"></script>
+
+    <!-- <script src="js/p5.play.js"></script> -->
+
+  <!-- add firebase config here-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCunQdU6NnuUHiEAOAbDZfzyUk73UlAOUE",
+    authDomain: "hurdles-45df8.firebaseapp.com",
+    databaseURL: "https://hurdles-45df8.firebaseio.com",
+    projectId: "hurdles-45df8",
+    storageBucket: "hurdles-45df8.appspot.com",
+    messagingSenderId: "145962210042",
+    appId: "1:145962210042:web:631e4622613bdd860def43"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="canvascontainer">
+        <script src="sketch.js"></script>
+    </div>
+    <p>
+        <button id="clearbutton">Clear Drawing</button>
+    </p>
+</body>
+
+</html>
