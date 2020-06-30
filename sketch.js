@@ -10,7 +10,9 @@ var allPlayers;
 function setup() {
     canvas = createCanvas(600, 400);
     database=firebase.database();
-    
+    game=new Game();
+    game.getstate();
+    game.start();
 }
 
 
