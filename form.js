@@ -11,25 +11,23 @@ class Form{
     }*/
     display(){
         var title=createElement('h2');
-        title.html("Car Racing Game");
+        title.html("Hurdles");
         title.position(displayWidth/2-50,0);
-       var  input=createInput('name');
-      var  button=createButton('play');
+     
       
-       // this.input.position(displayWidth/2-50,displayHeight/2-50);
-      // this.button.position(displayWidth/2-50,displayHeight/2);
+    this.input.position(130,160);
+       this.button.position(250,200);
       // this.reset.position(displayWidth-250,displayHeight/8);
-      input.position(130,160);
-      button.position(250,200);
+      
 
         button.mousePressed(()=>{
             input.hide();
             button.hide();
-            var name=input.value();
+            player.name=this.input.value();
 
-            playerCount+=1;
-           // player.index=playerCount;
-            player.update(name);
+            playerCount++;
+            player.index=playerCount;
+            player.update();
             player.updateCount(playerCount);
             
             this.greeting.html("hello "+name);
