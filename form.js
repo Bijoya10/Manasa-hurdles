@@ -1,7 +1,7 @@
 class Form{
     constructor(){
-       // this.input=createInput('name');
-        //this.button=createButton('play');
+        this.input=createInput('name');
+        this.button=createButton('play');
         this.greeting=createElement('h3');
     }
    /* hide(){
@@ -20,9 +20,9 @@ class Form{
       // this.reset.position(displayWidth-250,displayHeight/8);
       
 
-        button.mousePressed(()=>{
-            input.hide();
-            button.hide();
+       this. button.mousePressed(()=>{
+            this.input.hide();
+           this. button.hide();
             player.name=this.input.value();
 
             playerCount++;
