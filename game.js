@@ -20,7 +20,7 @@ class  Game{
         // if(playerCountRef.exists()){
              //playerCount=playerCountRef.val();
              player.getCount();
-            // form=new Form();
+             //form=new Form();
             // form.display();
         }
         form=new Form();
@@ -29,8 +29,8 @@ class  Game{
     }
     play(){
         form.hide();
-        textSize(30);
-        text("Game Start",120,100);
+        title.htmlSize(30);
+        title.html("Game Start",120,100);
         Player.getPlayerInfo();
 
         if(allPlayer!==undefined){
