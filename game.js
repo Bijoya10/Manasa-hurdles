@@ -20,11 +20,11 @@ class  Game{
         // if(playerCountRef.exists()){
              //playerCount=playerCountRef.val();
              player.getCount();
-             form=new Form();
-             form.display();
+            // form=new Form();
+            // form.display();
         }
-       // form=new Form();
-       // form.display();
+        form=new Form();
+        form.display();
    
     }
     play(){
