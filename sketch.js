@@ -4,6 +4,7 @@ var playerCount;
 var gameState=0
 var form,player,game;
 var allPlayers;
+var player1,player2,players;
 
 
 
